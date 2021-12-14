@@ -1,0 +1,100 @@
+#plan-cards {
+    margin-bottom: 100px;
+    width: 70%;
+    margin: auto;
+    padding: 30px 0;
+}
+
+.plan-card {
+    vertical-align: middle;
+    background-color: #c2f0cf;
+    width: 31%;
+    display: inline-block;
+    height: auto;
+    text-align: center;
+    padding: 15px;
+    margin: 8px;
+}
+
+.plan-card#card-big {
+    background-color: #3bb15b;
+    box-shadow: 2px 2px 2px 2px rgb(0,0,0,0.5);
+}
+
+#card-big ul {
+    color: white;
+}
+
+.plan-card__list {
+    list-style: none;
+    padding: 0;
+}
+
+.plan-card__buttom {
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.plan-card__buttom:hover,
+.plan-card__buttom:active {
+    color: black;
+    background-color: white;
+}
+
+.plan-card__buttom:focus {
+    outline: none;
+}
+
+#plan-card__annotation {
+    color: #3bb15b;
+    background-color: white;
+    border-radius: 8px;
+    margin: 20px;
+    padding: 6px;
+    box-shadow: 2px 2px 2px 2px rgb(0,0,0,0.5);
+}
+
+.plan-card__p{
+    color:white;
+}
+
+.plan-card__money {
+    color: grey;
+}
+
+#key-features {
+    background-color: #ff1b68;
+    padding: 20px;
+    margin: 30px 0;
+    color: white;
+}
+
+#key-features .section-title {
+    color: white;
+    margin-bottom: 50px;
+}
+
+.key-feature {
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.key-feature__image {
+    background: #ffcede;
+    width: 128px;
+    height: 128px;
+    border: 2px solid #424242;
+    border-radius: 50%;
+    margin: auto;
+    /* it will automatically fill the available space 
+    to the left and right equally to center the element horizontally
+    not vertically*/
+}
+
