@@ -7,6 +7,7 @@ main {
     margin: 16px 0;
     border: 4px solid #0e4f1f;
     border-left: none;
+    position: relative;
 }
 
 .package:hover,
@@ -21,6 +22,13 @@ main {
     /* page default */
     display: block;
     padding: 32px;
+}
+
+.package__badge {
+    position: absolute;
+    top: 50px;
+    left: 750px;
+    margin: 20px;
 }
 
 .package__subtitle {
@@ -76,4 +84,5 @@ main {
     position: fixed;
     width: 100%;
     height: 100%;
+    z-index: -1;
 }
