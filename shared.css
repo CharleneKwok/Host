@@ -30,6 +30,13 @@ body {
     font-size: 22px;
 }
 
+.main-header__brand img {
+    height: 22px;
+    /* height: 100%; not working because the contaner is inline block
+    change to inline-block instead work now*/
+    /* take the height of the surrounding container */
+}
+
 .main-nav {
     display: inline-block;
     width: calc(100% - 69px);
