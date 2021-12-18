@@ -3,6 +3,11 @@
     box-sizing: border-box;
 }
 
+/* html {
+    font-size: 75%;
+    75% of the browser setting
+} */
+
 body {
     font-family: 'Ubuntu', sans-serif;
     margin: 0px;
