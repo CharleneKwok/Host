@@ -25,10 +25,9 @@ body {
 }
 
 .modal {
-    border: 2px black solid;
+    border: 2px #ccc solid;
     background: white;
     width: 30vw;
-    height: 30vh;
     text-align: center;
     position: fixed;
     z-index: 200;
@@ -40,27 +39,34 @@ body {
 }
 
 .modal__actions {
-    padding: 10px;
+    text-align: center;
 }
 
-.modal__actions a {
+.modal__action {
+    padding: 0.5rem;
+    font: inherit;
     text-decoration: none;
     color: white;
     background: #11451D;
-    vertical-align: middle;
 }
 
 .modal__action--negative {
     background: red;
     color: white;
-    border: 1.5px red solid;
-    vertical-align: middle;
-    margin-bottom: 1px;
+    border: 0.8px white solid;
     cursor: pointer;
 }
+  
+.modal__action:hover,
+.modal__action:active {
+    background: #2ddf5c;
+    border-color: #2ddf5c;
+}
 
-.modal__action {
-    padding: 10px;
+.modal__action--negative:hover,
+.modal__action--negative:active {
+    background: #ff5454;
+    border-color: #ff5454;
 }
 
 .main-header {

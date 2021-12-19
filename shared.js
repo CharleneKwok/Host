@@ -1,18 +1,23 @@
-const backdrop = document.getElementsByClassName("backdrop");
-const modal = document.getElementsByClassName("modal");
+const backdrop = document.getElementsByClassName("backdrop")[0];
+// const backdrop = document.querySelector('.backdrop');
+const modal = document.getElementsByClassName("modal")[0];
 const buttons = document.getElementsByClassName("plan-card__button");
-const noButton = document.getElementsByClassName("modal__action--negative");
+// const buttons = document.querySelectorAll('plan-card__button');
+const noButton = document.getElementsByClassName("modal__action--negative")[0];
 
-console.log("?");
 [...buttons].forEach(button => {
     button.addEventListener('click', () => {
-        backdrop[0].style.display = 'block';
-        modal[0].style.display = 'block';
+        backdrop.style.display = 'block';
+        modal.style.display = 'block';
     });
 });
 
-noButton[0].addEventListener('click', () => {
-    backdrop[0].style.display = 'none';
-    modal[0].style.display = 'none';
-});
+const closeModal = () => {
+    backdrop.style.display = 'none';
+    modal.style.display = 'none';
+}
+
+noButton.addEventListener('click', closeModal);
+backdrop.addEventListener('click', closeModal);
+
 
