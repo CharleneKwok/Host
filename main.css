@@ -113,12 +113,17 @@ h1 {
     margin-bottom: 3rem;
 }
 
+.key-feature__list {
+    padding: 0;
+}
+
 .key-feature {
-    display: inline-block;
-    width: 33%;
+    width: 50%;
     text-align: center;
     font-weight: bold;
     vertical-align: middle;
+    margin: auto;
+    list-style: none;
 }
 
 .key-feature__image {
@@ -159,5 +164,14 @@ h1 {
 
     #card-big {
         box-shadow: 2px 2px 2px 2px rgb(0,0,0,0.5);
+    }
+
+    .key-feature__list {
+        text-align: center;
+    }
+
+    .key-feature {
+        display: inline-block;
+        width: 23vw;
     }
 }
