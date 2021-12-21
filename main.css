@@ -1,23 +1,22 @@
 #plan-cards {
     margin-bottom: 7rem;
-    width: 70%;
-    margin: auto;
-    padding: 2rem 0;
+    width: 100%;
     text-align: center;
 }
 
 #product-overview { 
     /* stacking mutiple backgrounds */
     background: linear-gradient(to top, rgba(80,68,18,0.6) 10%, transparent),
-                url(Images/freedom.jpg) left 10% top 20%/cover no-repeat border-box, #ccc;
+                url(Images/freedom.jpg) left 10% top 10%/cover no-repeat border-box, #ccc;
     /* background: url(Images/freedom.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0 40%; */
     width: 100vw;
-    height: 43vh;
+    height: 53vh;
     padding: 10px;
     position: relative;
+    margin-top: 20px;
 }
 
 .section-title {
@@ -34,6 +33,7 @@
     position: absolute;
     bottom: 10px;
     left: 20px;
+    font-size: 1.6rem;
 }
 
 h1 {
@@ -41,19 +41,19 @@ h1 {
 }
 
 .plan-card {
-    vertical-align: middle;
     background-color: #c2f0cf;
-    width: 31%;
-    display: inline-block;
+    width: 80%;
     height: auto;
     text-align: center;
     padding: 1rem;
-    margin: 8px;
+    margin: auto;
+    margin-bottom: 10px;
+    min-width: 231px;
+    max-width: 367px;
 }
 
 .plan-card#card-big {
     background-color: #3bb15b;
-    box-shadow: 2px 2px 2px 2px rgb(0,0,0,0.5);
 }
 
 #card-big ul {
@@ -74,13 +74,13 @@ h1 {
     cursor: pointer;
 }
 
-.plan-card__buttom:hover,
-.plan-card__buttom:active {
+.plan-card__button:hover,
+.plan-card__button:active {
     color: black;
     background-color: white;
 }
 
-.plan-card__buttom:focus {
+.plan-card__button:focus {
     outline: none;
 }
 
@@ -134,3 +134,30 @@ h1 {
     not vertically*/
 }
 
+@media (min-width: 55rem) {
+    #product-overview {
+        height: 60vh;
+        background-position: 50% 25%;
+    }
+
+    /* kick in this part when the scrren is larger and equal to 40rem */
+    #product-overview h1 {
+        font-size: 2rem;
+    }
+
+    #plan-cards {
+        width: 100%;
+    }
+
+    .plan-card {
+        display: inline-block;
+        width: 10vw;
+        min-width: 277px;
+        vertical-align: middle;
+        margin: 0 2px;
+    }
+
+    #card-big {
+        box-shadow: 2px 2px 2px 2px rgb(0,0,0,0.5);
+    }
+}
