@@ -124,6 +124,7 @@ body {
     position: fixed;
     display: none;
     z-index: 300;
+    top: 0;
     width: 250px;
     height: 100vh;
     background-color: white;
@@ -142,10 +143,7 @@ body {
 }
 
 .main-nav {
-    display: inline-block;
-    width: calc(100% - 4rem);
-    text-align: right;
-    vertical-align: middle;
+    display: none;
 }
 
 .main-nav__items {
@@ -209,8 +207,7 @@ body {
 }
 
 .main-footer__link {
-    display: inline-block;
-    margin: 0 1rem;
+    margin: 1rem;
 }
 
 .main-footer__link a {
@@ -221,4 +218,21 @@ body {
 .main-footer__link a:hover,
 .main-footer__link a:active {
     color: #ccc;
+}
+
+@media (min-width: 55rem) {
+    .main-nav {
+        display: inline-block;
+        width: calc(100% - 2rem);
+        text-align: right;
+        vertical-align: middle;
+    }
+
+    .toggle-button {
+        display: none;
+    }
+
+    .main-footer__link {
+        display: inline-block;
+    }
 }

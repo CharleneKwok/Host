@@ -149,6 +149,10 @@ h1 {
     #product-overview h1 {
         font-size: 2rem;
     }
+    
+    #plans {
+        margin-top: 100px;
+    }
 
     #plan-cards {
         width: 100%;
@@ -156,10 +160,9 @@ h1 {
 
     .plan-card {
         display: inline-block;
-        width: 10vw;
         min-width: 277px;
         vertical-align: middle;
-        margin: 0 2px;
+        margin: 30px 2px;
     }
 
     #card-big {
