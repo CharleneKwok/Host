@@ -13,7 +13,7 @@
     background-repeat: no-repeat;
     background-position: 0 40%; */
     width: 100vw;
-    height: 53vh;
+    height: 43vh;
     padding: 10px;
     position: relative;
     margin-top: 20px;
@@ -28,12 +28,10 @@
 #product-overview h1 {
     color: aliceblue;
     margin: 0;
-    margin-top: 2rem;
     padding: 2rem;
     position: absolute;
     bottom: 10px;
-    left: 20px;
-    font-size: 1.6rem;
+    font-size: 1.1rem;
 }
 
 h1 {
@@ -48,8 +46,7 @@ h1 {
     padding: 1rem;
     margin: auto;
     margin-bottom: 10px;
-    min-width: 231px;
-    max-width: 367px;
+    min-width: 277px;
 }
 
 .plan-card#card-big {
@@ -139,7 +136,7 @@ h1 {
     not vertically*/
 }
 
-@media (min-width: 55rem) {
+@media (min-width: 40rem) {
     #product-overview {
         height: 60vh;
         background-position: 50% 25%;
@@ -159,6 +156,7 @@ h1 {
     }
 
     .plan-card {
+        width: 30%;
         display: inline-block;
         min-width: 277px;
         vertical-align: middle;

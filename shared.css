@@ -220,7 +220,7 @@ body {
     color: #ccc;
 }
 
-@media (min-width: 55rem) {
+@media (min-width: 40rem) {
     .main-nav {
         display: inline-block;
         width: calc(100% - 2rem);

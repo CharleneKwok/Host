@@ -7,11 +7,12 @@ main {
     margin: 1rem 0;
     border: 4px solid #0e4f1f;
     border-left: none;
+    min-width: 245px;
 }
 
 .package:hover,
 .package:active {
-    box-shadow: 2px 2px 2px 4px rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 20px 4px rgba(0,0,0,0.5);
     border-color: #ff5454;
 }
 
@@ -26,14 +27,15 @@ main {
 
 .package__badge {
     position: absolute;
-    top: 0px;
-    right: 0;
-    margin: 20px;
+    top: 3px;
+    right: 10px;
+    margin: 10px;
     border: 3px rgb(187, 84, 84) solid;
     color: white;
-    padding: 10px;
+    padding: 2px;
     background: rgb(187, 84, 84);
     box-shadow: 1px 1px 1px 2px rgba(0,0,0,0.5);
+    font-size: 1rem;
 }
 
 .package__subtitle {
