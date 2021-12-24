@@ -1,0 +1,109 @@
+main {
+    padding-top: 2rem;
+}
+
+.signup-page {
+    margin: auto;
+    max-width: 30rem;
+    padding: 2rem 1rem;
+}
+
+.signup-title {
+    width: 100%;
+    text-align: center;
+    color: rgb(205, 99, 99);
+}
+
+.signup-form {
+    border: 1px #ccc solid;
+    padding: 30px;
+    box-shadow: 1px 1px 3px 2px rgba(0,0,0,0.5);
+    border-radius: 10px;
+}
+
+.signup-form input,
+.signup-form select {
+    padding: 0.3rem 0;
+    width: 100%;
+    font-family: inherit;
+}
+
+.signup-form input:invalid {
+    background-color: #faacac;
+    border: 2px #faacac solid;
+}
+
+.signup-form input:focus,
+.signup-form select:focus {
+    outline: none;
+    background: #d8f3df;
+    border-color: #3ddf5c;
+}
+
+.signup-form label:not(.custom-checkbox) {
+    display: block;
+    padding: 0.5rem 0;
+}
+
+/* .signup-form input[ id *= "terms" ],
+.signup-form input[ id *= "terms" ] + label {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+} */
+
+.agree-terms,
+.custom-checkbox {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.custom-checkbox input {
+    display: none;
+}
+
+.custom-checkbox span {
+    border: 3px solid #7e8a94;
+    height: 1.1rem;
+    width: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-checkbox span:hover,
+.custom-checkbox input:checked + span {
+    border: 3px solid #11451D;
+}
+
+.custom-checkbox input:checked + span::before {
+    content: "✔";
+    transition: all .2s;
+}
+
+/* .custom-checkbox input:checked + span */
+
+.signup-form .button {
+    margin: 1rem 0;
+    display: block;
+    background: #11451D;
+    font-family: inherit;
+    color: white;
+    padding: 0.6rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.button[disabled] {
+    cursor: not-allowed;
+}
+
+.signup-form .button:hover,
+.signup-form .button:active {
+    color: #11451D;
+    background: white;
+    box-shadow: 1px 1px 3px 2px rgba(0,0,0,0.5);
+}
