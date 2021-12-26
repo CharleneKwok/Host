@@ -1,7 +1,5 @@
 #plan-cards {
     margin-bottom: 7rem;
-    width: 100%;
-    text-align: center;
 }
 
 #product-overview { 
@@ -41,7 +39,7 @@ h1 {
 .plan-card {
     background-color: #c2f0cf;
     width: 80%;
-    height: auto;
+    /* height: auto; */
     text-align: center;
     padding: 1rem;
     margin: auto;
@@ -112,15 +110,20 @@ h1 {
 
 .key-feature__list {
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .key-feature {
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     font-weight: bold;
-    vertical-align: middle;
-    margin: auto;
-    list-style: none;
+    margin: 2rem 0;
 }
 
 .key-feature__image {
@@ -153,22 +156,29 @@ h1 {
 
     #plan-cards {
         width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-
+    
     .plan-card {
-        width: 30%;
-        display: inline-block;
-        min-width: 277px;
-        vertical-align: middle;
-        margin: 30px 2px;
+        height: 24rem;
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 0;
     }
 
     #card-big {
         box-shadow: 2px 2px 2px 2px rgb(0,0,0,0.5);
+        height: auto;
+        z-index: 20;
     }
 
     .key-feature__list {
-        text-align: center;
+        flex-direction: row;
     }
 
     .key-feature {

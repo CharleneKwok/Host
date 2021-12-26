@@ -91,13 +91,16 @@ body {
 
 
 .main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: #2ddf5c;
     width: 100%;
     padding: 0.5rem 1rem;
     position: fixed;
     top:0;
     left:0;
-    z-index: 1;
+    z-index: 21;
 }
 
 .main-header > div {
@@ -114,7 +117,7 @@ body {
 }
 
 .main-header__brand img {
-    height: 1.3rem;
+    height: 1.5rem;
     /* height: 100%; not working because the contaner is inline block
     change to inline-block instead work now*/
     /* take the height of the surrounding container */
@@ -128,14 +131,16 @@ body {
     width: 250px;
     height: 100vh;
     background-color: white;
-    text-align: center;
     box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
 }
 
 .mobile-nav__items {
-    margin-top: 100px;
-    margin-left: -50px;
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
 }
 
 .mobile-nav__item {
@@ -201,9 +206,12 @@ body {
 }
 
 .main-footer__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     list-style: none;
     padding: 0;
-    text-align: center;
 }
 
 .main-footer__link {
@@ -222,17 +230,15 @@ body {
 
 @media (min-width: 40rem) {
     .main-nav {
-        display: inline-block;
-        width: calc(100% - 2rem);
-        text-align: right;
-        vertical-align: middle;
+        display: flex;
+        justify-content: flex-end;
     }
 
     .toggle-button {
         display: none;
     }
 
-    .main-footer__link {
-        display: inline-block;
+    .main-footer__links {
+        flex-direction: row;
     }
 }
