@@ -13,6 +13,10 @@ body {
     margin: 0px;
 }
 
+main {
+    min-height: calc(100vh - 55px - 184px);
+}
+
 .backdrop {
     position: fixed;
     display: none;
