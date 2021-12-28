@@ -19,6 +19,7 @@ main {
     padding: 30px;
     box-shadow: 1px 0 4px 2px rgba(0,0,0,0.1);
     border-radius: 10px;
+    display: grid;
 }
 
 .signup-form input,
@@ -106,4 +107,19 @@ main {
     color: #11451D;
     background: white;
     box-shadow: 1px 1px 3px 2px rgba(0,0,0,0.5);
+}
+
+@media (min-width: 28rem) {
+    .signup-form {
+        grid-template-columns: 10rem auto;
+        grid-row-gap: 1rem;
+    }
+
+    .agree-terms {
+        grid-column: span 2;
+    }
+
+    .button {
+        grid-column: span 2;
+    }
 }
