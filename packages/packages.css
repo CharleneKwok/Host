@@ -1,5 +1,5 @@
 main {
-    padding-top: 2rem;
+    padding-top: 3rem;
 }
 
 .package {
@@ -23,6 +23,7 @@ main {
     display: block;
     padding: 2rem;
     position: relative;
+    overflow: hidden;
 }
 
 .package__badge {
@@ -36,6 +37,9 @@ main {
     background: rgb(187, 84, 84);
     box-shadow: 1px 1px 1px 2px rgba(0,0,0,0.5);
     font-size: 1rem;
+    transform: rotateZ(30deg) translateX(6.5rem) translateY(-2rem);
+    width: 20rem;
+    text-align: center;
 }
 
 .package__subtitle {

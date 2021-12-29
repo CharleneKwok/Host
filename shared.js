@@ -10,13 +10,15 @@ const mobileNav = document.querySelector(".mobile-nav");
 [...buttons].forEach(button => {
     button.addEventListener('click', () => {
         backdrop.style.display = 'block';
-        modal.style.display = 'block';
+        // modal.style.display = 'block';
+        modal.classList.add("open");
     });
 });
 
 const closeModal = () => {
     backdrop.style.display = 'none';
-    modal.style.display = 'none';
+    // modal.style.display = 'none';
+    modal.classList.remove("open");
 }
 
 if (noButton) {
@@ -25,7 +27,7 @@ if (noButton) {
 
 backdrop.addEventListener('click', () => {
     if (modal) {
-        modal.style.display = 'none';
+        modal.classList.remove("open");
     }
     backdrop.style.display = 'none';
     mobileNav.style.display = 'none';

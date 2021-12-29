@@ -3,21 +3,24 @@
     width: 100%;
     text-align: center;
 }
+
+main {
+    margin-top: 4rem;
+}
   
 .testimonial__image-container {
     width: 100%;
     max-width: 580px;
     display: inline-block;
     /* vertical-align: top; */
+    transform: skewX(20deg);
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
 }
 
 .testimonial__image {
+    transform: skewX(-20deg) scale(1.6);
     width: 100%;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
-}
-
-#customer-1 .testimonial__image {
-    margin-top: 90px;
 }
 
 .testimonial__info {
