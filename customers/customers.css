@@ -46,7 +46,7 @@ main {
     color: #7a7a7a;
 }
 
-@media (min-width: 50rem) {
+@media (min-width: 47rem) {
     .testimonial {
         flex-direction: row;
     }
