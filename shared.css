@@ -16,6 +16,7 @@ body {
 main {
     min-height: calc(100vh - 55px - 184px);
     margin-top: 2rem;
+    width: 100%;
 }
 
 .backdrop {
@@ -32,24 +33,28 @@ main {
 .modal {
     border: 2px #ccc solid;
     background: white;
-    width: 30vw;
     text-align: center;
     position: fixed;
     z-index: 200;
-    top: 30%;
-    left: 35%;
+    max-width: 500px;
+    /* top: 50%;
+    left: 50%; */
     padding: 1rem;
     box-shadow: 1px 1px 1px rgba(0,0,0,0.5);
     opacity: 0;
     transform: translateY(-3rem);
-    transition: opacity 500ms, transform 500ms;
+    transition: opacity 500ms ease-out, transform 500ms ;
     border-radius: 20px;
+    /* margin-top: -100px;
+    margin-left: -250px; */
+    left: 0;
+    right: 0;
+    margin: 30vh auto;
 }
 
 .open {
-    display: block;
-    transform: translateY(0);
-    opacity: 1;
+    transform: translateY(0) !important;
+    opacity: 1 !important;
 }
 
 .modal__actions {
@@ -140,12 +145,14 @@ main {
 .mobile-nav {
     position: fixed;
     display: none;
+    transform: translateX(-100%);
     z-index: 300;
     top: 0;
     width: 250px;
     height: 100vh;
     background-color: white;
     box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+    transition: transform 200ms ease-in;
 }
 
 .mobile-nav__items {
