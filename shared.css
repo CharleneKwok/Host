@@ -202,6 +202,10 @@ main {
     color: black;
 }
 
+.main-nav--cta {
+    animation: wiggle 400ms 3s 8 ease-out;
+}
+
 .main-nav--cta a, 
 .mobile-nav--cta a{
     color: white;
@@ -261,5 +265,17 @@ main {
 
     .main-footer__links {
         flex-direction: row;
+    }
+}
+
+@keyframes wiggle {
+    0% {
+        transform: rotateZ(0);
+    }
+    50% {
+        transform: rotateZ(-10deg);
+    }
+    100% {
+        transform: rotateZ(10deg);
     }
 }
